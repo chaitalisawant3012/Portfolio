@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chaitali Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0b1c2d, #050b16);
+    color:#dcdcdc;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#ffffff,#9ea3a8);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:black;
+    font-weight:bold;
+}
+
+nav a{
+    color:#dcdcdc;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c8a85d;
+}
+
+/* GENERAL SECTION */
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.small-title{
+    color:#c8a85d;
+    letter-spacing:4px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.big-title{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+/* HERO */
+.hero{
+    padding-top:100px;
+}
+
+.hero img{
+    width:160px;
+    border-radius:50%;
+    border:3px solid rgba(255,255,255,0.2);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+}
+
+.subtitle{
+    color:#c8a85d;
+    letter-spacing:3px;
+    margin:10px 0 20px;
+}
+
+.hero p{
+    max-width:500px;
+    margin:auto;
+    opacity:0.8;
+}
+
+.btns{
+    margin-top:30px;
+}
+
+button{
+    padding:12px 28px;
+    margin:10px;
+    border-radius:4px;
+    border:1px solid rgba(255,255,255,0.3);
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    color:black;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+    margin:20px auto;
+    max-width:500px;
+    backdrop-filter:blur(12px);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:900px;
+    margin:auto;
+}
+
+/* SKILLS */
+.skill{
+    text-align:left;
+    margin-bottom:25px;
+}
+
+.skill-title{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+}
+
+.progress{
+    height:8px;
+    background:rgba(255,255,255,0.1);
+    border-radius:10px;
+}
+
+.progress span{
+    display:block;
+    height:100%;
+    background:#c8a85d;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:50px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="left">
+        <div class="logo">✦</div>
+        <h2>Chaitali sawant </h2>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <h1>Chaitali Sawant </h1>
+  
+            <button>CONNECT</button>
+        <button>EXPLORE</button>
+    </div>
+
+</section>
+
+
+<section id="about">
+    <div class="small-title">PROFILE</div>
+    <div class="big-title">About Me</div>
+<div class="card">
+        A sincere, multitasking and motivated professional committed to delivering quality work and continuously improving skills.
+    </div>
+
+    
+
+<section id="skills">
+    <div class="small-title">EXPERTISE</div>
+    <div class="big-title">Technical Skills</div>
+
+
+        <div class="card">
+            <div class="skill-title"><span>HTML</span><span>90%</span></div>
+            <div class="progress"><span style="width:90%"></span></div>
+        </div>
+
+                
+        <div class="card">
+            <div class="skill-title"><span>Python</span><span>75%</span></div>
+            <div class="progress"><span style="width:75%"></span></div>
+        </div>
+
+        <div class="card">
+            <div class="skill-title"><span>C</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+        </div>
+    <div class="card">
+            <div class="skill-title">C++<span>78%</span></div>
+            <div class="progress"><span style="width:78%"></span></div>
+        </div>
+
+
+
+</section>
+
+<section id="hobbies">
+    <div class="small-title">PASSIONS</div>
+    <div class="big-title">Hobbies & Interests</div>
+
+    <div class="grid">
+        
+        
+        
+        <div class="card">🍳<br> Cooking</div>
+        <div class="card">💃<br> Dance</div>
+        <div class="card">🧘<br> sports</div>
+         <div class="card">🖌️<br>Swimming </div>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="small-title">GET IN TOUCH</div>
+    <div class="big-title">Contact</div>
+
+   <div class="card">
+      <div class="card"><strong>Mobile:</strong> 7720815958</div>
+
+        <div class="card"> <strong>Email:</strong> chaitalisawant3012@gmail.com</div>
+</div>
+
+  <footer>
+  Chaitali sawant- Digital portfolio
+</footer>
+
+</body>
+</html>
